@@ -1,0 +1,31 @@
+* {
+    color:beige;
+}
+
+body {
+    background-color: black;
+}
+
+#home--sobre_melvin{
+    width: 1000px;
+    height: 500px
+}
+
+
+#home--melvin{
+    height: 50%;
+    width: 50%;
+}
+
+.special{
+    color:rgb(41, 15, 233);
+}
+
+h1{
+    color: violet;
+}
+
+p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
