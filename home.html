@@ -3,80 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué es el CSS?</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Melvin, el Elefante de Chocolate</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Introducción al CSS</h1>
-        <nav>
-            <ul> 
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#origen">Origen</a></li>
-                <li><a href="#como-funciona">¿Cómo funciona?</a>
-                    <ul>
-                        <li><a href="#inline-css">Inline CSS</a></li>
-                        <li><a href="#internal-css">Internal CSS</a></li>
-                        <li><a href="#external-css">External CSS</a></li>
-                    </ul>
-                </li>
-                <li><a href="#selectores">Selectores</a></li>
-                <li><a href="#melvin">Melvin</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>¿Qué es el CSS?</h2>
-            <!-- Inline CSS -->
-            <p>CSS, o hojas de estilo en cascada, es un lenguaje utilizado para describir la presentación de un documento escrito en HTML o XML.</p>
-            <p>Es esencial para la creación de sitios web modernos y define cómo los elementos HTML deben ser visualizados en pantalla.</p>
-        </section>
+    <div id="header">
+        <h1>Melvin, el Elefante de Chocolate</h1>
+    </div>
+    <div id="content">
+        <div class="section">
+            <h2>Conocé a Melvin</h2>
+            <p>Melvin es un elefante único hecho de delicioso chocolate. Su cuerpo brilla con un tono café profundo, y su dulzura no tiene comparación.</p>
+        </div>
 
-        <section id="origen">
-            <h3>El origen del CSS</h3>
-            <p class="special">El CSS fue propuesto por primera vez por Håkon Wium Lie en 1994. Desde entonces, ha evolucionado hasta convertirse en uno de los pilares del desarrollo web.</p>
-        </section>
+        <div class="section">
+            <h2>Aventuras de Melvin</h2>
+            <p>Desde las tierras dulces de cacao hasta los ríos de caramelo, Melvin ha recorrido muchos lugares en busca de nuevas aventuras.</p>
+        </div>
 
-        <section id="como-funciona">
-            <h2>¿Cómo funciona el CSS?</h2>
-            <p class="special">Existen varias maneras de aplicar CSS a un documento HTML, entre las que se incluyen:</p>
-            
-            <article id="inline-css">
-                <h4>Inline CSS</h4>
-                <p class="special">El CSS en línea se aplica directamente a los elementos HTML usando el atributo <code>style</code> dentro de las etiquetas.</p>
-            </article>
-            
-            <article id="internal-css">
-                <h4>Internal CSS</h4>
-                <p>El CSS interno se escribe dentro de la sección <code>&lt;style&gt;</code> del documento HTML, generalmente en la cabecera.</p>
-            </article>
-            
-            <article id="external-css">
-                <h4>External CSS</h4>
-                <p class="special">El CSS externo se enlaza a través de un archivo separado con la extensión <code>.css</code>, lo que facilita su mantenimiento y reutilización en múltiples páginas.</p>
-            </article>
-        </section>
-
-        <section id="selectores">
-            <h2>Selectores en CSS</h2>
-            <p>Los <em>selectores</em> son patrones que se utilizan para seleccionar los elementos HTML que quieres estilizar. Hay varios tipos de selectores:</p>
+        <div class="section curiosidades">
+            <h2>Curiosidades</h2>
             <ul>
-                <li>Selector de etiquetas</li>
-                <li>Selector de clases</li>
-                <li>Selector de ID</li>
-                <li>Selector de atributos</li>
+                <li>Color favorito: Chocolate</li>
+                <li>Comida favorita: Cerealito, un sábado en la mañana.</li>
+                <li>Hobby: Motivador personal.</li>
             </ul>
-        </section>
+        </div>
+        <div class="section">
+            <h2>Únete a la Aventura de Melvin</h2>
+            <img src="melvin-elefante-chocolate.jpg" alt="Melvin, el Elefante de Chocolate" class="imagen-melvin">
+        </div>
 
-        <section id="home--sobre_melvin">
-            <h3>Sobre Melvin</h3>
-            <img id="home--melvin" src="./melvin.jpg" alt="Ejemplo de imagen">
-            <p>Melvin es un elefante muy tuanis.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Aprende más sobre CSS en el sitio oficial de <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">W3C</a>.</p>
-    </footer>
+
+        <!-- <div class="section interaccion">
+
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <button type="submit" class="boton">¡Únete ahora!</button>
+            </form>
+        </div> -->
+    </div>
+    <div id="footer">
+        <p>© 2024 Melvin, el Elefante de Chocolate. Todos los derechos reservados.</p>
+    </div>
 </body>
 </html>
