@@ -9,27 +9,107 @@
     src: url(Kanit-Regular.ttf)
 }
 
-body {
+body{
+    height: 100vh;
     font-family: MiFuente;
-    background-color: #F2F2F2;
-    color: #590202;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+body.theme-light{
+    background-color: white;
+    color: #590202;
+}
+
+body.theme-dark{
+    background-color: #350101;
+    color: white;
 }
 
 #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: #A64732;
     color: #F2F2F2;
     padding: 20px;
     text-align: center;
 }
 
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    outline: none;
+}
+
+button i {
+    font-size: 25px;
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    button {
+        right: 5%;
+        padding: 0;
+        top: auto;
+    }
+    button i {
+        font-size: 50px;
+    }
+
+}
+
+/* For mobile first */
+
+/* #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #A64732;
+    color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+button i {
+    font-size: 36px;
+    color: inherit;
+}*/
+
+
+
+
+
+
 #header h1 {
     font-size: 2.5em;
     color: #F2D43D;
+    margin: 0;
 }
 
 #content {
     padding: 20px;
+    height: 100vh;
 }
 
 .section {
@@ -77,20 +157,6 @@ body {
     border-radius: 5px;
 }
 
-.boton {
-    background-color: #A64732;
-    color: #F2F2F2;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-.boton:hover {
-    background-color: #D9AB23;
-}
-
 #footer {
     background-color: #590202;
     color: #F2F2F2;
@@ -99,7 +165,7 @@ body {
     margin-top: 20px;
 }
 
-#cajaContainer {
+/* #cajaContainer {
     padding: 1rem;
     text-align: center;
     width: 700px;
@@ -109,15 +175,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    /* main axis     cross axis
- row   horizontal     vertical
-
- column  vertical      horizontal
-    */
-    /* main axis */
     justify-content: space-around;
-
-    /* cross axis */
     align-items: flex-start;
 }
 
@@ -146,5 +204,5 @@ body {
 
 #caja4 {
     background-color: limegreen;
-}
+} */
 
